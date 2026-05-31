@@ -1,9 +1,5 @@
-from inventario.models.product import (
-    create_product,
-    list_products,
-    get_product_by_code,
-    delete_product
-)
+from inventario.models.product import create_product, delete_product, get_product_by_code, list_products
+
 
 def add_product_controller(product_code, name, price_unit, quantity):
     if not product_code or not name:

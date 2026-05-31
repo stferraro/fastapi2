@@ -1,5 +1,6 @@
 from ..database import connection
 
+
 def create_product(product_code: str, name: str, price_unit: float, quantity: int):
     conn = connection.get_connection()
 

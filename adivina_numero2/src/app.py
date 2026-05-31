@@ -1,12 +1,11 @@
-from pathlib import Path
 import random
+from pathlib import Path
 
 from fastapi import FastAPI, Form, Request
 from fastapi.responses import RedirectResponse
 from fastapi.templating import Jinja2Templates
 from scalar_fastapi import get_scalar_api_reference
 from starlette.middleware.sessions import SessionMiddleware
-
 
 app = FastAPI(
     title="Adivina Numero 2 API",

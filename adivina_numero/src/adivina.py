@@ -1,11 +1,10 @@
-from pathlib import Path
 import random
+from pathlib import Path
 
 from fastapi import FastAPI, Request
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from starlette.middleware.sessions import SessionMiddleware
-
 
 app = FastAPI()
 app.add_middleware(SessionMiddleware, secret_key="adivina-numero-secreto")

@@ -1,14 +1,14 @@
 from fastapi import FastAPI, HTTPException
-from inventario.schemas.product_schema import ProductCreate, ProductResponse
-from inventario.database.connection import create_tables
+from scalar_fastapi import get_scalar_api_reference
+
 from inventario.controllers.product_controller import (
     add_product_controller,
-    list_products_controller,
+    delete_product_controller,
     get_product_controller,
-    delete_product_controller
+    list_products_controller,
 )
-
-from scalar_fastapi import get_scalar_api_reference
+from inventario.database.connection import create_tables
+from inventario.schemas.product_schema import ProductCreate, ProductResponse
 
 app = FastAPI(title="Inventario API")
 create_tables()

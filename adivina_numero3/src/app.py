@@ -1,6 +1,7 @@
+import random
+
 from fastapi import FastAPI
 from scalar_fastapi import get_scalar_api_reference
-import random
 
 app = FastAPI()
 
