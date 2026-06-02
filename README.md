@@ -1,1 +1,1 @@
-# fastapi2
+# Serie de ejercicios para practicar FastAPI, SQLite, PostgreSQL y SQLModel
